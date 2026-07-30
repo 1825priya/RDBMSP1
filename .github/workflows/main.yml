@@ -1,0 +1,23 @@
+name: SQL Autograding
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  grade:
+
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@v4
+
+    - name: Install SQLite
+      run: sudo apt-get update && sudo apt-get install -y sqlite3
+
+    - name: Make Test Executable
+      run: chmod +x tests/test.sh
+
+    - name: Run Tests
+      run: tests/test.sh
