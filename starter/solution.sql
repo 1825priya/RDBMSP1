@@ -7,3 +7,5 @@
 -- The database file CollegeDB.db will be created automatically.
 
 -- Write your SQL statements below.
+create database CollegeDB;
+use CollegeDB;
