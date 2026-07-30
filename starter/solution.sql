@@ -1,20 +1,9 @@
 -- ********************************************
--- Assignment: Create CollegeDB and Department Table
+-- Assignment:
+-- Create CollegeDB and Department Table
 -- ********************************************
 
--- Create Database (For MySQL / SQL Server)
+-- SQLite does not support CREATE DATABASE.
+-- The database file CollegeDB.db will be created automatically.
 
-CREATE DATABASE CollegeDB;
-
--- Select the Database
-
-USE CollegeDB;
-
--- Create Department Table
-
-CREATE TABLE Department
-(
-    DepartmentID INT(5) PRIMARY KEY,
-    DepartmentName VARCHAR(20),
-    HOD VARCHAR(20)
-);
+-- Write your SQL statements below.
